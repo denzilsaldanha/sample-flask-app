@@ -1,9 +1,10 @@
 import requests
 import json
 
-url = "http://10.0.0.49:5000/hello"
+url = "https://mije4kosbd.execute-api.ap-southeast-2.amazonaws.com/default/raspi-input"
 
-data = {'Sample Data': 'Hi'}
+data = {'rasp_id' : '1',
+        'status': '10'
 
 data1 = json.dumps(data,ensure_ascii=False)
 print(data)
